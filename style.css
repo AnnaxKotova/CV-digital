@@ -1,0 +1,31 @@
+*{background-color: #7FA7A6
+}    
+    /* NAVBAR*/
+
+    .police_ordinateur{
+        font-family: vt323;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+
+.navbar, .container-fluid{
+    background-color: #EF5F64;
+    font-style: black bold !important;
+    justify-content: space-between;
+}
+
+/* .container-fluid > a{
+    margin: %;
+} */
+
+/* SALUTATIONS */
+.container-salutations{
+    background-color: #7FA7A6;
+    margin: 5%;
+    font-family: raleway medium;
+}
+
+h2, p{
+    background-color: #F1D8BC;
+}
