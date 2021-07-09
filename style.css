@@ -1,4 +1,4 @@
-*{background-color: #7FA7A6
+*, html{background-color: #7FA7A6
 }    
     /* NAVBAR*/
 
@@ -15,17 +15,21 @@
     justify-content: space-between;
 }
 
-/* .container-fluid > a{
-    margin: %;
-} */
-
 /* SALUTATIONS */
 .container-salutations{
     background-color: #7FA7A6;
     margin: 5%;
     font-family: raleway medium;
-}
+    }
 
-h2, p{
+    p{
     background-color: #F1D8BC;
 }
+    
+  h2 {
+    background-color: #EF5F64; 
+    /* comment peut-on définir un argument avec son valeur seulement pour un élément????? */
+}
+
+
+/*COMPETENCES*/
