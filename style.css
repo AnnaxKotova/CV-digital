@@ -1,7 +1,6 @@
 body{
     background-color: #7FA7A6; /*mise la couleur directement pout toute la page*/
     font-family: raleway medium;
-
 }    
 
 html{
@@ -12,10 +11,16 @@ html{
     scroll-padding-top: 70px;
 } */
 
+.left{
+    text-align: start;
+}
+
+.right{
+text-align: end;
+}
+
 .police_ordinateur{
     font-family: vt323;
-    font-size: 9vw;
-    text-align: center;
 }    
 
 
@@ -24,14 +29,18 @@ html{
 }
 
 .fond{ /*ce class est pour ajouter style pour chaque paragraph*/
- margin: 1%;
- padding: 2%; /*MIEUX CHOISIR POUR CHAQUE MEDIA QUERY */
+ margin: 1% 2%;
+padding: 1%; /* MIEUX CHOISIR POUR CHAQUE MEDIA QUERY */
  background-color: #F1D8BC;
 }
 
     
   h2 {
     background-color: #EF5F64; 
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     /* comment peut-on définir un argument avec son valeur seulement pour un élément????? */
 }
 
@@ -77,23 +86,28 @@ justify-content: space-around;
 
 picture{
     margin: 3%;
+    text-align: center;
+}
+
+picture > img{
+    height: 12vh;
 }
 
 /*FOOTER*/
 .footer{
-    background-color: #E6C5A5;
+    background-color: #FF948A;
 }
 
 /*MEDIA QUERY SMARTPHONE*/
 @media only screen and (max-width: 650px){
-
+    .police_ordinateur{
+        font-size: 2.3rem;
+    }
     /*SALUTATIONS*/
-
     h1{
         font-size: 15vw;
-        background-color: #7FA7A6;
         width: 100%;
-        padding-top:50px;
+        padding-top: 50px;
         text-align: center;
     }
     
@@ -105,20 +119,39 @@ picture{
         align-items: center;
     }
 
+
     .metier{
-        width: 50%;
-        font-size: 5.9vw;
+        min-width: 45%;
+        font-size: 5vw;
         text-align: center;
     }
+
+/* MISE EN FORME IMAGE DE PROFIL */
 
     #myself{
         width: 45%;
         height: 100%;
+        margin: 2%;
         border-radius: 45px;
         border-color: black;
         border-style: inset;
         border-width: initial;
     }
 
+    .footer{
+        text-align: center;
+        padding-inline: 3%;
+    }
 
+    .contacts{
+        font-size: x-large;
+        margin: 3%;
+    }
+
+    .online{
+        display: flex;
+        font-size: xx-large;
+        margin: 10%;
+        justify-content: space-around;
+    }
 }

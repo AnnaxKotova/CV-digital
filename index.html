@@ -51,10 +51,10 @@
        <!--salutations--> 
 <h1>Anna Kotova</h1>
     <div class="salutations fond" id="home_anch">      
-      <div class="metier">Front-end developer (Junior)<br/>
+      <div class="metier">Front-end<br/> developer (Junior)<br/>
             <i class="fas fa-map-marker-alt"></i> Paris, France</div>      
             <img id="myself" src="images/DSC_0130_1.jpg"/>
-           <P class="police_ordinateur"> &LT!--Hello!_></p>
+           <p class="police_ordinateur"> &LT!--Hello!_></p>
        <p>And welcome to my personal web page. My name is Anna and I am discovering the incredible world of Frond End development. Curious and passionate by challenges, I am currently creating user-friendly web-interfaces in CSS, JS and Bootstrap.</p>
        <p>Would you like to know more about me and my background? Scroll down and 
         <span class="police_ordinateur">#Let's go!</span></p></div>
@@ -64,18 +64,18 @@
  <h2 class="police_ordinateur anchor" id="comp_anch">
       &LT!--What can I do--></h2>
     <div class="competences fond">
-        <picture><img src="images/html5.png" height="60vh"/>
-        HTML5</picture>
-        <picture><img src="images/CSS3.png" height="70vh"/>
-        CSS 3</picture>
-        <picture><img src="images/JS.png" height="70vh"/>
-        JavaScript</picture>
-        <picture><img src="images/bootstrap.png" height="70vh"/>
-       Bootstrap  </picture>
-       <picture><img src="images/PHP.svg.png" height="70vh"/>
-            PHP</picture>
-        <picture><img src="images/python.png" height="70vh"/>
-         Python</picture>
+        <picture><img src="images/html5.png"/>
+        <div>HTML5</div></picture>
+        <picture><img src="images/CSS3.png"/>
+        <div>CSS 3</div></picture>
+        <picture><img src="images/JS.png"/>
+        <div>JavaScript</div></picture>
+        <picture><img src="images/bootstrap.png"/>
+       <div>Bootstrap</div></picture>
+       <picture><img src="images/python.png"/>
+        <div>Python</div></picture>
+        <picture><img src="images/PHP.svg.png"/>
+        <div>PHP</div></picture>
       <div class="police_ordinateur">/*Methodologies*/</div>
       <div class="fond">
           <ul>
@@ -188,14 +188,16 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum in laborum modi dicta quis ex provident quia officia eveniet aut, iste perspiciatis omnis. Est numquam eaque perferendis nostrum aliquam!
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rerum beatae error vel praesentium hic deserunt commodi iste blanditiis mollitia, amet asperiores! Amet, earum cum. Eum magni minus iure dignissimos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum in laborum modi dicta quis ex provident quia officia eveniet aut, iste perspiciatis omnis. Est numquam eaque perferendis nostrum aliquam!
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rerum beatae error vel praesentium hic deserunt commodi iste blanditiis mollitia, amet asperiores! Amet, earum cum. Eum magni minus iure dignissimos.</p></div>
-    <div class="footer"><!--FOOTER-->
-    <h2>Anna Kotova</h2>
-    Front-end web developer in Paris
-    <h3 class="police_ordinateur anchor">&LT!--Questions?        
-        Contact me!--></h3>
+    
+    <!--FOOTER-->
+    <div class="footer anchor" id="contacts_anch">
+    <h1>Anna Kotova</h1>
+    <p class="metier">Front-end web developer in Paris</p>
+    <h3 class="police_ordinateur left">&LT!--Questions?</h3>        
+        <h3 class="police_ordinateur right">Contact me!--></h3>
         <div class="contacts">
-            <i class="fas fa-at"></i>annaxkotova@gmail.com
-            <i class="fas fa-phone-alt"></i>+33-6 27 30 48 69
+            <div><i class="fas fa-phone-alt"></i>+33-6 27 30 48 69</div>
+            <div><i class="fas fa-at"></i>annaxkotova@gmail.com</div>
         </div>
         <div class="online">
             <i class="fab fa-github"></i>
@@ -203,21 +205,23 @@
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-twitter-square"></i>
         </div>
+        <p class="police_ordinateur">Or leave your message here !</p>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          Mentions légales
-Politique de confidentialité
-Conditions d'utilisation
-
-Anna Kotova (c) 2021
+        <div class="mb-3 left">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+          <div class="mentions">
+          <div>Mentions légales</div>
+          <div>Politique de confidentialité</div>
+          <div>Conditions d'utilisation</div>
+          <div>Anna Kotova (c) 2021</div>
+      </div>
     </div> 
     <script src="https://kit.fontawesome.com/39fa235958.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
