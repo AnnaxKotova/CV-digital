@@ -1,35 +1,124 @@
-*, html{background-color: #7FA7A6
-}    
-    /* NAVBAR*/
-
-    .police_ordinateur{
-        font-family: vt323;
-        font-size: xx-large;
-        text-align: center;
-    }
-
-
-.navbar, .container-fluid{
-    background-color: #EF5F64;
-    font-style: black bold !important;
-    justify-content: space-between;
-}
-
-/* SALUTATIONS */
-.container-salutations{
-    background-color: #7FA7A6;
-    margin: 5%;
+body{
+    background-color: #7FA7A6; /*mise la couleur directement pout toute la page*/
     font-family: raleway medium;
-    }
 
-    p{
-    background-color: #F1D8BC;
+}    
+
+html{
+    scroll-padding-top: 20px;
 }
+/* 
+#home_anch{
+    scroll-padding-top: 70px;
+} */
+
+.police_ordinateur{
+    font-family: vt323;
+    font-size: 9vw;
+    text-align: center;
+}    
+
+
+.anchor:target{
+    padding-top: 40px;
+}
+
+.fond{ /*ce class est pour ajouter style pour chaque paragraph*/
+ margin: 1%;
+ padding: 2%; /*MIEUX CHOISIR POUR CHAQUE MEDIA QUERY */
+ background-color: #F1D8BC;
+}
+
     
   h2 {
     background-color: #EF5F64; 
     /* comment peut-on définir un argument avec son valeur seulement pour un élément????? */
 }
 
+/* NAVBAR*/
+
+nav{
+    border: 1px dashed;
+}
+
+.navbar, .container-fluid{
+    font-family: vt323;
+    font-size: large;
+    background-color: #EF5F64;
+    font-style: black bold !important;
+    padding: 1% 3% 1% 3%;
+    justify-content: space-between;
+    border-width: initial;
+    border-color: black;
+}
+
+.nav-item{
+    border-width: 1px;
+    background-color: #EF5F64; /*pour avoir le coleur dans la version mobile*/
+}
+
+/* SALUTATIONS */
+.salutations{
+    font-family: raleway medium;
+    }
 
 /*COMPETENCES*/
+.competences{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.competences{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+picture{
+    margin: 3%;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #E6C5A5;
+}
+
+/*MEDIA QUERY SMARTPHONE*/
+@media only screen and (max-width: 650px){
+
+    /*SALUTATIONS*/
+
+    h1{
+        font-size: 15vw;
+        background-color: #7FA7A6;
+        width: 100%;
+        padding-top:50px;
+        text-align: center;
+    }
+    
+    .salutations{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .metier{
+        width: 50%;
+        font-size: 5.9vw;
+        text-align: center;
+    }
+
+    #myself{
+        width: 45%;
+        height: 100%;
+        border-radius: 45px;
+        border-color: black;
+        border-style: inset;
+        border-width: initial;
+    }
+
+
+}
