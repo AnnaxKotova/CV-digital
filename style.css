@@ -103,10 +103,17 @@ picture > img{
     .police_ordinateur{
         font-size: 2.3rem;
     }
+
+    .header_big{
+
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }  
+
     /*SALUTATIONS*/
     h1{
         font-size: 15vw;
-        width: 100%;
         padding-top: 50px;
         text-align: center;
     }
@@ -130,7 +137,6 @@ picture > img{
 
     #myself{
         width: 45%;
-        height: 100%;
         margin: 2%;
         border-radius: 45px;
         border-color: black;
@@ -155,3 +161,35 @@ picture > img{
         justify-content: space-around;
     }
 }
+
+@media only screen and (min-width: 650px) and (max-width: 1280px){
+ .header_big{
+
+display:flex;
+flex-wrap: wrap; /*à refaire ici*/
+}  
+
+h1{
+        font-size: 5vw;
+        width: 50%;
+        padding-top: 50px;
+        text-align: left;
+        padding-left: 3%;
+    }
+    /* MISE EN FORME IMAGE DE PROFIL */
+
+    #myself{
+        width: 45%;
+        margin: 2%;
+        border-radius: 45px;
+        border-color: black;
+        border-style: inset;
+        border-width: initial;
+    }
+    .metier{
+        min-width: 45%;
+        font-size: 2.5vw;
+        text-align: center;
+        background-color: #7FA7A6;
+    }
+} 
