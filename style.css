@@ -1,15 +1,12 @@
 body{
     background-color: #7FA7A6; /*mise la couleur directement pout toute la page*/
-    font-family: raleway medium;
+    font-family: 'Raleway', sans-serif;
 }    
 
 html{
     scroll-padding-top: 20px;
 }
-/* 
-#home_anch{
-    scroll-padding-top: 70px;
-} */
+
 
 .left{
     text-align: start;
@@ -41,6 +38,7 @@ padding: 1%; /* MIEUX CHOISIR POUR CHAQUE MEDIA QUERY */
     margin-bottom: 3%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    padding-left: 1.5% ;
     /* comment peut-on définir un argument avec son valeur seulement pour un élément????? */
 }
 
@@ -66,11 +64,6 @@ nav{
     background-color: #EF5F64; /*pour avoir le coleur dans la version mobile*/
 }
 
-/* SALUTATIONS */
-.salutations{
-    font-family: raleway medium;
-    }
-
 /*COMPETENCES*/
 .competences{
 display:flex;
@@ -89,6 +82,10 @@ picture{
     text-align: center;
 }
 
+.project{
+    margin-inline: 0;
+}
+
 picture > img{
     height: 12vh;
 }
@@ -98,18 +95,23 @@ picture > img{
     background-color: #FF948A;
 }
 
+
+label{
+    font-weight: bold;
+    text-align: start;
+}
+
+.mentions{
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+
 /*MEDIA QUERY SMARTPHONE*/
 @media only screen and (max-width: 650px){
     .police_ordinateur{
         font-size: 2.3rem;
     }
-
-    .header_big{
-
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        }  
 
     /*SALUTATIONS*/
     h1{
@@ -128,10 +130,12 @@ picture > img{
 
 
     .metier{
-        min-width: 45%;
+        min-width: 35%;
         font-size: 5vw;
         text-align: center;
     }
+
+    
 
 /* MISE EN FORME IMAGE DE PROFIL */
 
@@ -160,6 +164,18 @@ picture > img{
         margin: 10%;
         justify-content: space-around;
     }
+
+    .slider_big{
+        display: none;
+    }
+
+
+/*FOOTER*/
+
+    .footer >h1{
+        padding-top: 0;
+    }
+
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1280px){
@@ -191,5 +207,9 @@ h1{
         font-size: 2.5vw;
         text-align: center;
         background-color: #7FA7A6;
+    }
+
+    .slider_small{
+        display: none;
     }
 } 

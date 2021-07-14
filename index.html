@@ -48,16 +48,18 @@
       </nav>
     </div>
 
-       <!--salutations-->
-       <div class="header_big">
-<h1>Anna Kotova</h1>
-    <div class="salutations fond" id="home_anch">      
+       <!--HEADER salutations-->
+    
+    <div class="salutations" id="home_anch">  
+      <h1>Anna Kotova</h1>    
       <div class="metier">Front-end<br/> developer (Junior)<br/>
             <i class="fas fa-map-marker-alt"></i> Paris, France</div>      
-            <img id="myself" src="images/DSC_0130_1.jpg"/>
-           <p class="police_ordinateur"> &LT!--Hello!_></p>
-       <p>And welcome to my personal web page. My name is Anna and I am discovering the incredible world of Frond End development. Curious and passionate by challenges, I am currently creating user-friendly web-interfaces in CSS, JS and Bootstrap.</p>
-       <p>Would you like to know more about me and my background? Scroll down and 
+            <img id="myself" src="images/DSC_0130_1.jpg"/></div>
+ 
+      <div class="fond">
+        <p class="police_ordinateur fond hello"> &LT!--Hello!_></p>
+        <p>And welcome to my personal web page. My name is Anna and I am discovering the incredible world of Frond End development. Curious and passionate by challenges, I am currently creating user-friendly web-interfaces in CSS, JS and Bootstrap.</p>
+        <p>Would you like to know more about me and my background? Scroll down and 
         <span class="police_ordinateur">#Let's go!</span></p></div>
       </div> 
 
@@ -103,8 +105,48 @@
 
     <!--Projets-->
     <h2 class="police_ordinateur anchor" id="proj_anch">&LT!--My Projects --></h2>
-    <div class="fond">       
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="fond project">
+      <div id="carouselExampleCaptions" class="carousel slide slider_small" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/fête_bouqet_small.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fête ton bouquet</h5>
+              <p>a responsive web page
+                for a flower shop
+        <i class="fab fa-github"></i> [LIEN]</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fête_bouqet_small.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fête_bouqet_small.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>       
+        <div id="carouselExampleCaptions" class="carousel slide slider_big" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -207,14 +249,14 @@
             <i class="fab fa-twitter-square"></i>
         </div>
         <p class="police_ordinateur">Or leave your message here !</p>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <div class="mb-3 left">
+            <label for="exampleFormControlInput1" class="form-label">Vos prenom et nom</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Jean Dupont">
+            <label for="exampleFormControlInput1" class="form-label">Votre email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="mb-3 left">
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <label for="exampleFormControlTextarea1" class="form-label">Votre méssage</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
           <div class="mentions">
