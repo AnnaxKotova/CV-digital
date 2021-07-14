@@ -186,6 +186,8 @@ label{
 
 }
 
+/*REREGARDER LES FRONTIERS MEDIA QUERIS*/
+
 @media only screen and (min-width: 650px) and (max-width: 1280px){
 
     .fond{
@@ -210,26 +212,25 @@ label{
     /*HEADER*/
 
    .salutations{
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 420px;
+        height: 80vh;
         padding-top: 50px;
     }  
     .salutations > h1{
         font-size: 10vw;
-        width: 50%;
         text-align: right;
         padding-left: 3%;
-        min-height: 45%;
+        height: 40vh;
+        width: 45%;
     }
 
     .metier{
-        min-height: 45%;
-        font-size: 4.5vw;
+        font-size: 4.1vw;
         text-align: right;
         background-color: #7FA7A6;
-        width: 50%;
+        height: 30vh;
     }
 
 
@@ -242,8 +243,7 @@ label{
         border-color: black;
         border-style: inset;
         border-width: initial;
-        min-height: 45%;
-    }
+        }
 
 
 /* COMPETENCES */
