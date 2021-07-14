@@ -65,16 +65,12 @@ nav{
 }
 
 /*COMPETENCES*/
-.competences{
-display:flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
 
 .competences{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 picture{
@@ -148,6 +144,13 @@ label{
         border-width: initial;
     }
 
+/* COMPETENCES */
+
+picture{
+    min-width: 25%;  /*POUR AVOIR 3 élements dans la ligne*/
+}
+
+/* FOOTER */
     .footer{
         text-align: center;
         padding-inline: 3%;
@@ -208,6 +211,9 @@ h1{
         text-align: center;
         background-color: #7FA7A6;
     }
+
+/* COMPETENCES */
+
 
     .slider_small{
         display: none;
