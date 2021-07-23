@@ -246,7 +246,7 @@ label{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 90vh; /*on limite height pour faire le wrap possible*/
+        height: 50vw; /*on limite height pour faire le wrap possible, vw, pas vh, width pour garde la dependence*/
         width: 100%;
     }      
     .saluth1{ /*header*/
@@ -273,9 +273,9 @@ label{
     
 
     .salutations > picture{
-        height: 90vh;
-        width: 65%;
-        padding: 3%;
+        height: 100%;
+        width: 50%;
+        padding: 1%;
         text-align: center;
     }
 
@@ -283,8 +283,7 @@ label{
     /* MISE EN FORME IMAGE DE PROFIL */
 
     #myself{
-        height: auto;
-        width: 80%;
+        width: 100%;
         margin: 2%;
         border-radius: 45px;
         border-color: black;
