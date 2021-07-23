@@ -31,7 +31,7 @@ text-align: end;
 
 .fond{ /*ce class est pour ajouter style pour chaque paragraph*/
  margin: 1% 2%;
-padding: 1%; /* MIEUX CHOISIR POUR CHAQUE MEDIA QUERY */
+ padding: 1%; /* MIEUX CHOISIR POUR CHAQUE MEDIA QUERY */
  background-color: #F1D8BC;
 }
 
@@ -68,6 +68,10 @@ nav{
     background-color: #EF5F64; /*pour avoir le coleur dans la version mobile*/
 }
 
+.salutations{
+    padding-top: 45px;
+ } /*container commence quand la barre est fini*/
+
 /*COMPETENCES*/
 
 .competences{
@@ -77,18 +81,18 @@ nav{
     justify-content: space-around;
 }
 
-picture{
+/* picture > .salutations{
     margin: 3%;
     text-align: center;
-}
+} */
 
 .project{
     margin-inline: 0;
 }
 
-picture > img{
+/* picture .salutations> {
     height: 12vh;
-}
+} */
 
 /*FOOTER*/
 .footer{
@@ -116,9 +120,9 @@ label{
 
     /*SALUTATIONS*/
     h1{
-        font-size: 15vw;
-        padding-top: 50px;
         text-align: center;
+        font-size: 13vw; /*la taille de la police change avec la change la "width" de l'écran*/
+        
     }
     
     .salutations{
@@ -127,33 +131,53 @@ label{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        height: 100%; /*pour faire le container dépendent de la taille d'une image*/
+        
     }
-
+    
+    .saluth1{ /*class for the header*/
+        width: 100%;
+        height: 10%;
+        margin: 1%;
+        
+    }
 
     .metier{
-        min-width: 35%;
-        font-size: 5vw;
+        height: auto;
+        font-size: 4vw;
         text-align: center;
+        margin: 1%;
     }
-
     
+    .salutations > picture{
+        width: 60%;
+        margin: 1%;
+        } 
 
 /* MISE EN FORME IMAGE DE PROFIL */
 
-    #myself{
-        width: 45%;
-        margin: 2%;
-        border-radius: 45px;
-        border-color: black;
-        border-style: inset;
-        border-width: initial;
+#myself{
+    border-radius: 45px;
+    border-color: black;
+    border-style: inset;
+    border-width: initial;
+    width: 100%;
+    height: auto;
     }
+
 
 /* COMPETENCES */
 
-    picture{
-        min-width: 25%;  /*POUR AVOIR 3 élements dans la ligne*/
+   .competences{
+       width: 100%;
+       height: 80vh;
+   }
+
+    .competences > picture > img {
+        max-width: 25%;  /*POUR AVOIR 3 élements dans la ligne*/
     }
+
+
 
 /* FOOTER */
     .footer{
@@ -190,13 +214,24 @@ label{
 
 @media only screen and (min-width: 650px) and (max-width: 1280px){
 
-    .fond{
+    .fond{ /* class pour tout le text*/
         font-size: 2.5vw;
     }
     
-    h2, .hello{
-        font-size: 5vw;
+    h2, .hello {
+        font-size: 14vw;
         padding-bottom: 0;
+    }
+
+
+    .police_ordinateur{
+        font-size: 2.3rem;
+    }
+   
+
+    .saluth1 > h1{
+        font-size: 10vw;
+        text-align: right;
     }
 
     .hello{
@@ -204,40 +239,52 @@ label{
         align-self: center;
     }
 
-    .police_ordinateur{
-        font-size: 2.3rem;
-    }
-
 
     /*HEADER*/
 
-   .salutations{
+   .salutations{     /*MAIN CONTAINER*/
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 80vh;
-        padding-top: 50px;
-    }  
-    .salutations > h1{
-        font-size: 10vw;
+        height: 90vh; /*on limite height pour faire le wrap possible*/
+        width: 100%;
+    }      
+    .saluth1{ /*header*/
+        height: 50%;
+        padding: 1%;
+        width: 30%;
+        height: 45%;
+    }
+
+    .salut1 >h1{
         text-align: right;
-        padding-left: 3%;
-        height: 40vh;
-        width: 45%;
     }
 
     .metier{
-        font-size: 4.1vw;
         text-align: right;
-        background-color: #7FA7A6;
-        height: 30vh;
+        background-color: #7FA7A6;        
+        font-size: 3vw;
+        text-align: center;
+        align-items: center;
+        margin: 1%;
+        height: 30%;
+        width: 30%;
+    }
+    
+
+    .salutations > picture{
+        height: 90vh;
+        width: 65%;
+        padding: 3%;
+        text-align: center;
     }
 
 
     /* MISE EN FORME IMAGE DE PROFIL */
 
     #myself{
-        width: 45%;
+        height: auto;
+        width: 80%;
         margin: 2%;
         border-radius: 45px;
         border-color: black;
@@ -247,14 +294,16 @@ label{
 
 
 /* COMPETENCES */
-    .competence{
+    .competences{
         display: flex;
         flex-wrap: wrap;
+        display:none;
         }
-
-    picture{
-        flex-basis: 25%;  /*distribution d'éléments sans jeu avec height comme v. mobile*/
-    }
+/* 
+    .competences{
+        
+        flex-basis: 25%;  distribution d'éléments sans jeu avec height comme v. mobile
+    } */
 
     .slider_small{
         display: none;
