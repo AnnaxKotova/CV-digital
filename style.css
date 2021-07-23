@@ -218,27 +218,15 @@ label{
         font-size: 2.5vw;
     }
     
-    h2, .hello {
-        font-size: 14vw;
-        padding-bottom: 0;
-    }
-
-
     .police_ordinateur{
-        font-size: 2.3rem;
-    }
-   
+        font-size: 7.5vw;
+    
+    }  
 
     .saluth1 > h1{
-        font-size: 10vw;
+        font-size: 9.5vw;
         text-align: right;
     }
-
-    .hello{
-        text-align: center;
-        align-self: center;
-    }
-
 
     /*HEADER*/
 
@@ -246,14 +234,15 @@ label{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: space-around;
         height: 50vw; /*on limite height pour faire le wrap possible, vw, pas vh, width pour garde la dependence*/
         width: 100%;
     }      
     .saluth1{ /*header*/
-        height: 50%;
+        height: 30%;
         padding: 1%;
-        width: 30%;
-        height: 45%;
+        width: 40%;
+        height: 40%;
     }
 
     .salut1 >h1{
@@ -268,7 +257,7 @@ label{
         align-items: center;
         margin: 1%;
         height: 30%;
-        width: 30%;
+        width: 40%;
     }
     
 
@@ -296,13 +285,19 @@ label{
     .competences{
         display: flex;
         flex-wrap: wrap;
-        display:none;
-        }
-/* 
-    .competences{
         
-        flex-basis: 25%;  distribution d'éléments sans jeu avec height comme v. mobile
-    } */
+        }
+
+    .competences > picture{
+        width: 25px;
+        flex-basis: 25%;
+          /*distribution d'éléments sans jeu avec height comme v. mobile*/
+    }
+    
+    .competences > picture > img{
+        height: 30%;
+        ;
+    }
 
     .slider_small{
         display: none;
