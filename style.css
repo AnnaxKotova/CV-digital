@@ -79,20 +79,22 @@ nav{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
-/* picture > .salutations{
-    margin: 3%;
+.competences > picture{
+    margin: 1%;
     text-align: center;
-} */
+}
+
+.competences > picture > img{
+    height: 9.5vw;
+}
+
 
 .project{
     margin-inline: 0;
 }
-
-/* picture .salutations> {
-    height: 12vh;
-} */
 
 /*FOOTER*/
 .footer{
@@ -121,7 +123,7 @@ label{
     /*SALUTATIONS*/
     h1{
         text-align: center;
-        font-size: 13vw; /*la taille de la police change avec la change la "width" de l'écran*/
+        font-size: 13vw; /*la taille de la police change avec la change de la "width" de l'écran*/
         
     }
     
@@ -168,15 +170,9 @@ label{
 
 /* COMPETENCES */
 
-   .competences{
-       width: 100%;
-       height: 80vh;
-   }
-
-    .competences > picture > img {
-        max-width: 25%;  /*POUR AVOIR 3 élements dans la ligne*/
-    }
-
+.competences > picture{
+flex-basis: 25%; /*pour avoir ne plus que 3 élements dans la ligne*/
+}
 
 
 /* FOOTER */
@@ -204,7 +200,7 @@ label{
 
 /*FOOTER*/
 
-    .footer >h1{
+    .footer > h1{
         padding-top: 0;
     }
 
@@ -245,7 +241,7 @@ label{
         height: 40%;
     }
 
-    .salut1 >h1{
+    .salut1 > h1{
         text-align: right;
     }
 
@@ -280,25 +276,6 @@ label{
         border-width: initial;
         }
 
-
-/* COMPETENCES */
-    .competences{
-        display: flex;
-        flex-wrap: wrap;
-        
-        }
-
-    .competences > picture{
-        width: 25px;
-        flex-basis: 25%;
-          /*distribution d'éléments sans jeu avec height comme v. mobile*/
-    }
-    
-    .competences > picture > img{
-        height: 30%;
-        ;
-    }
-
     .slider_small{
         display: none;
     }
@@ -323,7 +300,6 @@ label{
     
     h3{
         font-size: 5vw;
-        padding-inline: 10%;
     }
 
     .contacts{
